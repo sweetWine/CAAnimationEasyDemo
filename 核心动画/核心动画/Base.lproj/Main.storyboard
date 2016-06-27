@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="81T-3i-QN8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="10j-Qt-IfP">
+            <objects>
+                <navigationController id="81T-3i-QN8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tZA-cJ-3e9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ysz-Is-49M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJc-cs-Erq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIE-k0-Kdi">
+                                <rect key="frame" x="91" y="125" width="138" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jrp-oV-n88"/>
+                                </constraints>
+                                <state key="normal" title="basicAnimation"/>
+                                <connections>
+                                    <action selector="basicAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ryf-sW-0Yt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-DE-pd1">
+                                <rect key="frame" x="88" y="236" width="145" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7nn-uI-3pg"/>
+                                </constraints>
+                                <state key="normal" title="KeyFrameAnimation"/>
+                                <connections>
+                                    <action selector="keyFrameAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7TT-P2-zVG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6e-fC-q9c">
+                                <rect key="frame" x="91" y="353" width="138" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="mWJ-mu-h01"/>
+                                </constraints>
+                                <state key="normal" title="GroupAnimation"/>
+                                <connections>
+                                    <action selector="groupAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1v-V8-b12"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u6e-fC-q9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BZV-Sq-XOH"/>
+                            <constraint firstItem="u6e-fC-q9c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="E8J-Wf-cbb"/>
+                            <constraint firstItem="WJE-DE-pd1" firstAttribute="top" secondItem="yIE-k0-Kdi" secondAttribute="bottom" constant="63" id="MoS-Yx-eFl"/>
+                            <constraint firstItem="WJE-DE-pd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="72" id="NwN-Bq-IKa"/>
+                            <constraint firstItem="yIE-k0-Kdi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcP-YF-gLL"/>
+                            <constraint firstItem="yIE-k0-Kdi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="XVO-Dl-1c8"/>
+                            <constraint firstItem="WJE-DE-pd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pXD-IQ-v3V"/>
+                            <constraint firstItem="yIE-k0-Kdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="tfd-wg-uiW"/>
+                            <constraint firstItem="u6e-fC-q9c" firstAttribute="top" secondItem="WJE-DE-pd1" secondAttribute="bottom" constant="69" id="yLA-dm-0ld"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sa4-Je-b6j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="331"/>
+        </scene>
+    </scenes>
+</document>
